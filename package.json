@@ -1,0 +1,36 @@
+{
+  "name": "gps-lib",
+  "version": "1.0.0",
+  "description": "Easily interact with NEO-6 series GPS chips and decode location information in your Node.js projects. This library streamlines communication with NEO-6 GPS chips, allowing you to effortlessly extract and utilize precise GPS data in your applications. Harness the power of location-based information with ease using this Node.js library.",
+  "main": "./lib/index.js",
+  "bin": "./lib/index.js",
+  "scripts": {
+    "test": "node ./test/test.js",
+    "start": "node ./test/server.js",
+    "logs": "node ./test/info.js",
+    "map": "node ./test/map.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pallob-Gain/gps-lib.git"
+  },
+  "keywords": [
+    "GPS",
+    "NEO-6",
+    "NMEA",
+    "Satellite",
+    "Geolocation",
+    "GPS parsing"
+  ],
+  "author": "Pallob K. Gain",
+  "license": "ISC",
+  "dependencies": {
+    "@serialport/parser-readline": "^12.0.0",
+    "express": "^4.18.2",
+    "gps": "^0.6.1",
+    "kalman": "^0.0.2",
+    "serialport": "^12.0.0",
+    "socket.io": "^4.7.2",
+    "sylvester": "^0.0.21"
+  }
+}
